@@ -5,8 +5,8 @@
 
 package com.company;
 
-public class All {
-    public All() {
+public class main {
+    public main() {
         GUI gui;
 
     }
