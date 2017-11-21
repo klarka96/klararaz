@@ -4,6 +4,8 @@ import javax.swing.*;
 
 public class GUI extends JFrame{
 
+    Controller[] controllers;
+
         public GUI() {
             setSize(800, 600);
             setTitle("Synthia");

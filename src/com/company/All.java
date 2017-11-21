@@ -7,7 +7,7 @@ package com.company;
 
 public class All {
     public All() {
-        GUI gui;
+
 
     }
 
