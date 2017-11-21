@@ -11,5 +11,4 @@ public class GUI extends JFrame{
             mainGui.setTitle("Synthia v.1.0");
             mainGui.setVisible(true);
         }
-
 }
