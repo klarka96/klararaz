@@ -7,7 +7,7 @@ package com.company;
 
 public class main {
     public main() {
-        GUI gui;
+        GUI intereface;
 
     }
 
