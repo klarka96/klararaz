@@ -3,7 +3,8 @@ package com.company;
 import javax.swing.*;
 
 public class GUI extends JFrame{
-// jak pdac push
+
+    Controller[] _controls;
         public static void main(String[] args) {
             GUI mainGui = new GUI();
             mainGui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
