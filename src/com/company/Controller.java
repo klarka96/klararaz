@@ -17,6 +17,7 @@ public class Controller extends JFrame{
 
         JButton c1= new JButton ("number");
         JSlider c2 = new JSlider (minVal, maxVal, initialVal);
+
         c1.setBounds(pos_in_window_x, pos_in_window_y, 80, 20 );
         add(c1);
     }
