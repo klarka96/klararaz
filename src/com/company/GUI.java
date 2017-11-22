@@ -2,14 +2,20 @@ package com.company;
 
 import javax.swing.*;
 
-public class GUI extends JFrame{
-// jak pdac push
+public class GUI extends JFrame {
+    // jak pdac push
+   public Controller[] _controls;
+
+        public GUI()
+    {
+
+    }
+
         public static void main(String[] args) {
             GUI mainGui = new GUI();
             mainGui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            mainGui.setSize(800,600);
-            mainGui.setTitle("Synthia v.1.0");
-
+                    mainGui.setSize(800,600);
+                    mainGui.setTitle("Synthia v.1.0");
             mainGui.setVisible(true);
         }
 }
