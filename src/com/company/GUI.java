@@ -26,6 +26,9 @@ public class GUI extends JFrame {
     }
 
         public static void main(String[] args) {
+
+            AudioHandle SND = new AudioHandle();
+            SND.playsound("C:/Users/Janek/Desktop/plik.wav"); // ta funkcja odtwarza plik, poki co plik musi byc maly, dla duzych nie odtwarza
             GUI mainGui = new GUI();
 
             mainGui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
