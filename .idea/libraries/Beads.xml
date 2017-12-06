@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Beads">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Desktop/Beads" />
+      <root url="file://$USER_HOME$/Desktop/Beads/beads/library" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$USER_HOME$/Desktop/Beads/beads/library" recursive="false" />
+  </library>
+</component>
