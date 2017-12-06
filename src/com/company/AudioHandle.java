@@ -8,9 +8,53 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.DataLine;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
+import javax.sound.sampled.Clip;
 
 public class AudioHandle {
     private static final int EXTERNAL_BUFFER_SIZE = 128000;
+    public AudioInputStream audioInputStream;
+    public Clip clip;
+    public DataLine.Info info;
+
+    public AudioHandle()
+    {
+         audioInputStream = null;
+         clip = null;
+         info = null;
+
+    }
+
+    public void playFile(){
+
+        clip.start();
+
+
+
+    }
+
+    public void loadData(String path) {
+
+
+        File soundFile = new File(path);
+
+        try {
+            this.audioInputStream = AudioSystem.getAudioInputStream(soundFile);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        info = new DataLine.Info(Clip.class, audioInputStream.getFormat());
+
+        try {
+            this.clip = (Clip) AudioSystem.getLine(info);
+            this.clip.open(audioInputStream);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+/*
+
 
     public void playsound(String path) {
 
@@ -65,7 +109,9 @@ public class AudioHandle {
 
         line.drain();
 
-       line.close();
+        line.stop();
+
+        line.close();
 
 
 
@@ -79,3 +125,5 @@ public class AudioHandle {
 
 
 }
+
+*/
