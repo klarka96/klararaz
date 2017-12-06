@@ -1,0 +1,20 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.RadioButton?>
+<GridPane fx:controller="Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="top_left" hgap="10" vgap="10">
+    <padding>
+        <Insets top = "20"/>
+        <Insets left = "20"/>
+    </padding>
+    <Button text="Play"  GridPane.columnIndex="0" GridPane.rowIndex="1"
+        onAction="#onButtonClicked"/>
+    <Button text ="Stop"  GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Button text ="Choose a .wav file"  GridPane.columnIndex="0" GridPane.rowIndex="2"
+        GridPane.columnSpan="2"/>
+    <Button text="Exit" GridPane.columnIndex="63" GridPane.rowIndex="1"/>
+</GridPane>
